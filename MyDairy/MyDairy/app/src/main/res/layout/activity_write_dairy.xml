@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WriteDairy">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!--显示由日历传过来的日期-->
+        <TextView
+            android:id="@+id/data_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:textColor="#000000"/>
+
+        <!--天气-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:textColor="#000000"
+            android:text="天气："/>
+        <EditText
+            android:id="@+id/weather_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:textColor="#6F6B6B" />
+
+        <!--地点定位-->
+        <TextView
+            android:id="@+id/dingwei_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:textColor="#6F6B6B"
+            />
+
+        <!--文字编辑-->
+        <EditText
+            android:id="@+id/wenzi_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:textColor="#000000"
+            />
+
+        <!--添加图片-->
+        <Button
+            android:id="@+id/addPicture_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="添加照片"/>
+        <ImageView
+            android:id="@+id/picture_xiangce"
+            android:layout_width="300dp"
+            android:layout_height="240dp"
+            android:layout_gravity="center_horizontal"/>
+
+        <!--添加音乐-->
+        <Button
+            android:id="@+id/addMusic_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="添加音乐"/>
+
+        <!--录音功能-->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/luyin_button"
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:text="开始录音"
+                android:layout_weight="1"/>
+            <Button
+                android:id="@+id/bofang_button"
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:text="播放录音"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+        <!--提交按钮-->
+        <Button
+            android:id="@+id/submit_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="提交"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

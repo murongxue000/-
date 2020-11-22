@@ -1,0 +1,93 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+<!--    <LinearLayout-->
+<!--        android:orientation="horizontal"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        >-->
+<!--        -->
+<!--        <EditText-->
+<!--            android:layout_width="0sp"-->
+<!--            android:layout_height=""-->
+<!--        -->
+<!--    </LinearLayout>-->
+
+    <CalendarView
+        android:id="@+id/calendar_view"
+        android:layout_width="match_parent"
+        android:layout_height="200dp" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!--显示由日历传过来的日期-->
+        <TextView
+            android:id="@+id/dateXS_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:textColor="#000000"
+            android:text="日期"/>
+
+        <!--天气-->
+        <TextView
+            android:id="@+id/weatherXS_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:textColor="#6F6B6B"
+            android:text="天气"/>
+
+        <!--地点定位-->
+        <TextView
+            android:id="@+id/dingweiXS_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:textColor="#6F6B6B"
+            android:text="我的位置"
+            />
+
+        <!--文字编辑-->
+        <TextView
+            android:id="@+id/wenziXS_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:textColor="#000000"
+            android:text="日记"
+            />
+
+        <!--添加图片-->
+        <ImageView
+            android:id="@+id/pictureXS_xiangce"
+            android:layout_width="300dp"
+            android:layout_height="240dp"
+            android:layout_gravity="center_horizontal"/>
+
+        <!--添加音乐-->
+        <Button
+            android:id="@+id/pauseMusicXS_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="暂停音乐"/>
+
+        <!--录音功能-->
+
+            <Button
+                android:id="@+id/bofangluyinXS_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="播放录音" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
