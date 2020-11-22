@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CONSActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#252525">
+
+        <TextView
+            android:id="@+id/CONS1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Conversion of"
+            android:textSize="36sp"
+            android:textColor="#02A296"
+            />
+        <TextView
+            android:id="@+id/CONS2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Number Systems"
+            android:textSize="36sp"
+            android:textColor="#02746C"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="25sp"
+            />
+
+        <TextView
+            android:id="@+id/before_choose"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Transformation before:"
+            android:textSize="25sp"
+            android:textColor="#FFFFFF"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="7sp"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioGroup
+                android:id="@+id/listBefore"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/before_choose10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="十进制"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/before_choose2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="二进制"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/before_choose8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="八进制"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/before_choose16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="十六进制"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="7sp"
+            />
+
+        <EditText
+            android:id="@+id/input_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#CCCBCB"
+            android:textSize="25sp"
+            android:hint="Input the number:"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="20sp"
+            />
+
+        <TextView
+            android:id="@+id/after_choose"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="After Transformation:"
+            android:textSize="25sp"
+            android:textColor="#FFFFFF"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="7sp"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioGroup
+                android:id="@+id/listAfter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/after_choose10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="十进制"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/after_choose2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="二进制"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/after_choose8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="八进制"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/after_choose16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="十六进制"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="7sp"
+            />
+
+        <TextView
+            android:id="@+id/result_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#CCCBCB"
+            android:textSize="25sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="20sp"
+            />
+
+        <Button
+            android:id="@+id/do_button"
+            android:layout_width="125dp"
+            android:layout_height="37dp"
+            android:layout_gravity="center"
+            android:background="#02746C"
+            android:text="transform"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="25sp"
+            />
+
+        <TextView
+            android:id="@+id/UC_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Unit Conversion"
+            android:textSize="36sp"
+            android:textColor="#02A296"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+
+            <Button
+                android:id="@+id/changdu_button"
+                android:layout_width="0sp"
+                android:layout_height="120sp"
+                android:layout_weight="1"
+                android:background="#358A7B"
+                android:textColor="#FFFFFF"
+                android:textSize="25dp"
+                android:text="长度单位"/>
+
+            <Button
+                android:id="@+id/tiji_button"
+                android:layout_width="0sp"
+                android:layout_height="120sp"
+                android:layout_weight="1"
+                android:background="#88A299"
+                android:textColor="#FFFFFF"
+                android:textSize="25dp"
+                android:text="体积单位"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

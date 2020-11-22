@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TijiActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#252525">
+
+        <TextView
+            android:id="@+id/tiji"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="体积单位转换"
+            android:textSize="36sp"
+            android:textColor="#98C9BE"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="25sp"
+            />
+
+        <TextView
+            android:id="@+id/before_tiji"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Transformation before:"
+            android:textSize="25sp"
+            android:textColor="#FFFFFF"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="7sp"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioGroup
+                android:id="@+id/listBefore_tiji"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/before_chooseCM3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="cm3"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp" />
+
+                <RadioButton
+                    android:id="@+id/before_chooseM3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="m3"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp" />
+
+                <RadioButton
+                    android:id="@+id/before_chooseML"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ml"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp" />
+
+                <RadioButton
+                    android:id="@+id/before_chooseL"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="L"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp" />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="7sp"
+            />
+
+        <EditText
+            android:id="@+id/input_tijinumber"
+            android:layout_width="300sp"
+            android:layout_height="wrap_content"
+            android:background="#CCCBCB"
+            android:textSize="25sp"
+            android:hint="Input:"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="20sp"
+            />
+
+        <TextView
+            android:id="@+id/after_choose_tiji"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="After Transformation:"
+            android:textSize="25sp"
+            android:textColor="#FFFFFF"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="7sp"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioGroup
+                android:id="@+id/listAfter_tiji"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/after_chooseCM3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="cm3"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp" />
+
+                <RadioButton
+                    android:id="@+id/after_chooseM3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="m3"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp" />
+
+                <RadioButton
+                    android:id="@+id/after_chooseML"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ml"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp" />
+
+                <RadioButton
+                    android:id="@+id/after_chooseL"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="L"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp" />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="7sp"
+            />
+
+        <TextView
+            android:id="@+id/result_view_tiji"
+            android:layout_width="300sp"
+            android:layout_height="wrap_content"
+            android:background="#CCCBCB"
+            android:textSize="25sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="20sp"
+            />
+
+        <Button
+            android:id="@+id/do_button_tiji"
+            android:layout_width="125dp"
+            android:layout_height="37dp"
+            android:layout_gravity="center"
+            android:background="#88A299"
+            android:text="transform"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="25sp"
+            />
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
